@@ -5,7 +5,7 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 
 public class ModFoods {
-    public static final FoodProperties COFFEE_BEANS = (new FoodProperties.Builder()
+    public static final FoodProperties COFFEE_SEEDS = (new FoodProperties.Builder()
             .nutrition(2)
             .saturationMod(0.1f)
             .fast()
