@@ -1,6 +1,8 @@
 package net.lacerdni.mcoffee.item;
 
 import net.lacerdni.mcoffee.MCoffeeMod;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,22 +17,14 @@ public class ModItems {
     public static final RegistryObject<Item> COFFEE_BEANS = ITEMS.register(
             "coffee_beans",
             () -> new Item(new Item.Properties()
-                    .food(new FoodProperties.Builder()
-                            .nutrition(1) // restores 1 hunger point (half a drumstick)
-                            .saturationMod(0.1f) // affects how long the hunger stays away
-                            .build()
-                    )
+                    .food(ModFoods.COFFEE_BEANS)
             )
     );
 
     public static final RegistryObject<Item> TOASTED_COFFEE_BEANS = ITEMS.register(
             "toasted_coffee_beans",
             () -> new Item(new Item.Properties()
-                    .food(new FoodProperties.Builder()
-                            .nutrition(2)
-                            .saturationMod(0.1f)
-                            .build()
-                    )
+                    .food(ModFoods.TOASTED_COFFEE_BEANS)
             )
     );
 

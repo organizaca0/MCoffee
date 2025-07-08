@@ -1,6 +1,7 @@
 package net.lacerdni.mcoffee;
 
 import com.mojang.logging.LogUtils;
+import net.lacerdni.mcoffee.item.ModFoods;
 import net.lacerdni.mcoffee.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
