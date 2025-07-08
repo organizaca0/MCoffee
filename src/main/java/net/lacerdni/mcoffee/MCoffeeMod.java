@@ -1,7 +1,9 @@
 package net.lacerdni.mcoffee;
 
 import com.mojang.logging.LogUtils;
+import net.lacerdni.mcoffee.item.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -27,6 +29,9 @@ public class MCoffeeMod
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        // Adiciona os items do mod ao jogo
+        ModItems.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -39,13 +44,15 @@ public class MCoffeeMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        LOGGER.info("HELLO FROM COMMON SETUP");
+        LOGGER.info("A cup of coffee?");
     }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+            event.accept(ModItems.COFFEE_BEANS);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
