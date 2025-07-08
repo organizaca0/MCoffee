@@ -14,8 +14,25 @@ public class ModItems {
 
     public static final RegistryObject<Item> COFFEE_BEANS = ITEMS.register(
             "coffee_beans",
-            () -> new Item(new Item.Properties()));
-//    public static final FoodProperties COFFEE_BEANS_PROPERTIES = new FoodProperties(new FoodProperties.Builder());
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(1) // restores 1 hunger point (half a drumstick)
+                            .saturationMod(0.1f) // affects how long the hunger stays away
+                            .build()
+                    )
+            )
+    );
+
+    public static final RegistryObject<Item> TOASTED_COFFEE_BEANS = ITEMS.register(
+            "toasted_coffee_beans",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationMod(0.1f)
+                            .build()
+                    )
+            )
+    );
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

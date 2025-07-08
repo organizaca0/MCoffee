@@ -52,6 +52,7 @@ public class MCoffeeMod
     {
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.COFFEE_BEANS);
+            event.accept(ModItems.TOASTED_COFFEE_BEANS);
         }
     }
 
