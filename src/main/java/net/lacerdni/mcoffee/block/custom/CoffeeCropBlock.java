@@ -18,12 +18,12 @@ public class CoffeeCropBlock extends CropBlock {
     }
 
     @Override
-    protected ItemLike getBaseSeedId() {
+    public ItemLike getBaseSeedId() {
         return ModItems.COFFEE_SEEDS.get();
     }
 
     @Override
-    protected IntegerProperty getAgeProperty() {
+    public IntegerProperty getAgeProperty() {
         return AGE;
     }
 
