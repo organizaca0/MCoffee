@@ -1,4 +1,7 @@
 {
   "item.mcoffee.coffee_seeds": "Coffee Seeds",
-  "item.mcoffee.toasted_coffee_beans": "Toasted Coffee Beans"
+  "item.mcoffee.toasted_coffee_beans": "Toasted Coffee Beans",
+  "block.mcoffee.coffee_bag": "Coffee Bag",
+  "block.mcoffee.coffee_crop": "Coffee Crop",
+  "effect.mcoffee.coffee_smell": "Fresh smell in the air!"
 }

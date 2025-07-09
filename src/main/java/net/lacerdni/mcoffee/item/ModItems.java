@@ -16,10 +16,11 @@ public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, MCoffeeMod.MODID);
 
+    // Basicamente isso seta a semente como um item que cria um bloco (e é comivel)
     public static final RegistryObject<Item> COFFEE_SEEDS = ITEMS.register(
             "coffee_seeds",
             () -> new ItemNameBlockItem(
-                    ModBlocks.COFFE_CROP.get(),
+                    ModBlocks.COFFEE_CROP.get(),
                     new Item.Properties()
                             .food(ModFoods.COFFEE_SEEDS)
             )

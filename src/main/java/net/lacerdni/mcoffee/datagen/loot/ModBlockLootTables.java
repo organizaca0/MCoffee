@@ -20,13 +20,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected void generate() {
         LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
-                .hasBlockStateProperties(ModBlocks.COFFE_CROP.get())
+                .hasBlockStateProperties(ModBlocks.COFFEE_CROP.get())
                 .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CoffeeCropBlock.AGE, 5));
 
         this.add(
-                ModBlocks.COFFE_CROP.get(),
+                ModBlocks.COFFEE_CROP.get(),
                 createCropDrops(
-                        ModBlocks.COFFE_CROP.get(),
+                        ModBlocks.COFFEE_CROP.get(),
                         ModItems.TOASTED_COFFEE_BEANS.get(),
                         ModItems.COFFEE_SEEDS.get(),
                         lootitemcondition$builder

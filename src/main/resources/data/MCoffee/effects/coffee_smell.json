@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:mob_effect",
+  "description": "effect.mcoffee.coffee_smell",
+  "icon": {
+    "texture": "minecraft:mob_effects",
+    "x": 2,
+    "y": 5
+  }
+}

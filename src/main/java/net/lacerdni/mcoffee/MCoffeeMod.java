@@ -2,6 +2,7 @@ package net.lacerdni.mcoffee;
 
 import com.mojang.logging.LogUtils;
 import net.lacerdni.mcoffee.block.ModBlocks;
+import net.lacerdni.mcoffee.effect.ModEffects;
 import net.lacerdni.mcoffee.item.ModFoods;
 import net.lacerdni.mcoffee.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -34,6 +35,8 @@ public class MCoffeeMod
         // Adiciona as coisas do mod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEffects.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -55,6 +58,8 @@ public class MCoffeeMod
         if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
             event.accept(ModItems.COFFEE_SEEDS);
             event.accept(ModItems.TOASTED_COFFEE_BEANS);
+            event.accept(ModBlocks.COFFEE_BAG.get().asItem());
+            event.accept(ModBlocks.COFFEE_CROP.get().asItem());
         }
     }
 

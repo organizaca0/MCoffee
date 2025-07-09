@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "mcoffee:block/coffee_bag",
+    "up": "mcoffee:block/coffee_bag_top",
+    "north": "mcoffee:block/coffee_bag",
+    "south": "mcoffee:block/coffee_bag",
+    "east": "mcoffee:block/coffee_bag",
+    "west": "mcoffee:block/coffee_bag"
+  }
+}
