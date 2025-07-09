@@ -34,7 +34,6 @@ public class MCoffeeMod
         // Adiciona as coisas do mod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

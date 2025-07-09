@@ -29,11 +29,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
     private ConfiguredModel[] coffeeStates(BlockState state, CropBlock cropBlock, String modelName, String textureName) {
         int age = state.getValue(((CoffeeCropBlock) cropBlock).getAgeProperty());
         String fullModelName = modelName + age;
+        ResourceLocation location = ResourceLocation.tryBuild(MCoffeeMod.MODID, "block/coffee_crop");
 
         ConfiguredModel[] models = new ConfiguredModel[1];
         models[0] = new ConfiguredModel(models().crop(
                 fullModelName,
-                new ResourceLocation(MCoffeeMod.MODID, "block/" + textureName + age)
+                location
         ).renderType("cutout"));
 
         return models;
