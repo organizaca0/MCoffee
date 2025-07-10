@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": { "item": "mcoffee:coffee_seeds" },
+  "result": "mcoffee:toasted_coffee_beans",
+  "experience": 0.35,
+  "cookingtime": 100
+}
