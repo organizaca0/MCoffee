@@ -3,7 +3,7 @@
   "description": "effect.mcoffee.coffee_smell",
   "icon": {
     "texture": "minecraft:mob_effects",
-    "x": 2,
-    "y": 5
+    "x": 0,
+    "y": 0
   }
 }

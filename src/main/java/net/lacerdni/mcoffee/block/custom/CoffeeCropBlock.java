@@ -122,7 +122,7 @@ public class CoffeeCropBlock extends CropBlock {
             double y = pos.getY() + 1.0;
             double z = pos.getZ() + 0.5 + (random.nextDouble() - 0.5);
 
-            world.addParticle(ParticleTypes.SMOKE, x, y, z, 0.05, 0.05, 0.05);
+            world.addParticle(ParticleTypes.SPORE_BLOSSOM_AIR, x, y, z, 0.05, 0.05, 0.05);
         }
     }
 }
