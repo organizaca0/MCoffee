@@ -104,9 +104,9 @@ public class CoffeeCropBlock extends CropBlock {
     @Override
     public void entityInside(BlockState state, Level level, BlockPos pos, Entity entity) {
         if (!level.isClientSide && entity instanceof LivingEntity livingEntity) {
-            MobEffectInstance speedEffect = new MobEffectInstance(ModEffects.COFFEE_SMELL.get(), 20, 0);
+            MobEffectInstance speedEffect = new MobEffectInstance(ModEffects.CAFFEINE_RUSH.get(), 20, 0);
 
-            if (!livingEntity.hasEffect(MobEffects.MOVEMENT_SPEED)) {
+            if (!livingEntity.hasEffect(ModEffects.CAFFEINE_RUSH.get())) {
                 livingEntity.addEffect(speedEffect);
             }
         }

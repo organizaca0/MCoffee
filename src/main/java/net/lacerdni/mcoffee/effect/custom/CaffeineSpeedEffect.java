@@ -1,14 +1,11 @@
 package net.lacerdni.mcoffee.effect.custom;
 
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 
-import javax.annotation.Nullable;
-
-public class CoffeeSpeedEffect extends MobEffect {
-    public CoffeeSpeedEffect() {
+public class CaffeineSpeedEffect extends MobEffect {
+    public CaffeineSpeedEffect() {
         super(MobEffectCategory.BENEFICIAL, 0x7E5109);
     }
 
